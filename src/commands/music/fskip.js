@@ -1,3 +1,22 @@
+ checkVoted(msg, voted) {
+
+        for (let i = 0; i < voted.length; i++) {
+
+            if (msg.author.id === voted[i].id) {
+
+                return false;
+
+            }
+
+        }
+
+        return true;
+
+    }
+
+}
+
+module.exports = ForceSkip;
 /**
  * Created by Julian/Wolke on 07.11.2016.
  */
